@@ -45,3 +45,5 @@ Expected Output
 You should see output similar to:
 
 Passed!  - Failed: 0, Passed: 7
+
+Output can be viewed under Reports/TestResultsOutput.txt

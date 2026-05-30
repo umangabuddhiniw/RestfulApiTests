@@ -89,6 +89,7 @@
 /Users/buddhiniwackista-aratchie/Desktop/QATest-UmangaBuddhini/RestfulApiTests/obj/Debug/net8.0/RestfulApiTests.AssemblyInfoInputs.cache
 /Users/buddhiniwackista-aratchie/Desktop/QATest-UmangaBuddhini/RestfulApiTests/obj/Debug/net8.0/RestfulApiTests.AssemblyInfo.cs
 /Users/buddhiniwackista-aratchie/Desktop/QATest-UmangaBuddhini/RestfulApiTests/obj/Debug/net8.0/RestfulApiTests.csproj.CoreCompileInputs.cache
+/Users/buddhiniwackista-aratchie/Desktop/QATest-UmangaBuddhini/RestfulApiTests/obj/Debug/net8.0/RestfulApiTests.sourcelink.json
 /Users/buddhiniwackista-aratchie/Desktop/QATest-UmangaBuddhini/RestfulApiTests/obj/Debug/net8.0/RestfulA.B55D900A.Up2Date
 /Users/buddhiniwackista-aratchie/Desktop/QATest-UmangaBuddhini/RestfulApiTests/obj/Debug/net8.0/RestfulApiTests.dll
 /Users/buddhiniwackista-aratchie/Desktop/QATest-UmangaBuddhini/RestfulApiTests/obj/Debug/net8.0/refint/RestfulApiTests.dll

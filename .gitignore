@@ -1,0 +1,21 @@
+# Build folders
+bin/
+obj/
+
+# Visual Studio
+.vs/
+
+# Rider
+.idea/
+
+# VS Code local settings (optional)
+.vscode/settings.json
+
+# Test Results
+TestResults/
+Reports/*.html
+Reports/*.json
+
+# OS files
+.DS_Store
+Thumbs.db
