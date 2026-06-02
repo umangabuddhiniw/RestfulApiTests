@@ -1,0 +1,56 @@
+name: RESTful API xUnit Tests
+
+on:
+  push:
+    branches:
+      - main
+      - master
+
+  pull_request:
+    branches:
+      - main
+      - master
+
+  workflow_dispatch:
+
+jobs:
+  api-tests:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup .NET 8
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Restore Dependencies
+        run: dotnet restore
+
+      - name: Build Solution
+        run: dotnet build --configuration Release --no-restore
+
+      - name: Execute xUnit Tests
+        run: dotnet test --configuration Release --no-build --verbosity normal
+
+      - name: Display Test Report
+        if: always()
+        run: |
+          if [ -f Reports/TestResultsOutput.txt ]; then
+            echo "===== TestResultsOutput.txt ====="
+            cat Reports/TestResultsOutput.txt
+          else
+            echo "Report file not found."
+          fi
+
+      - name: Upload Test Results Artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: RESTfulApi-Test-Results
+          path: Reports/TestResultsOutput.txt
+          if-no-files-found: warn
